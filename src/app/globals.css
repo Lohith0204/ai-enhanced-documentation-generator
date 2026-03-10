@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #0c0c0c;
+  color: #e8e8e8;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Selection */
+::selection {
+  background: #fff;
+  color: #000;
+}
+
+/* Focus */
+*:focus-visible {
+  outline: 1px solid #e8e8e8;
+  outline-offset: 2px;
+}
+
+/* Prose overrides for doc viewer */
+.prose-doc h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.prose-doc h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e8e8e8;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.prose-doc h3 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #d4d4d4;
+  margin: 1rem 0 0.4rem;
+}
+
+.prose-doc p {
+  color: #a3a3a3;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.prose-doc ul,
+.prose-doc ol {
+  color: #a3a3a3;
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.prose-doc li {
+  margin-bottom: 0.25rem;
+}
+
+.prose-doc strong {
+  color: #e8e8e8;
+  font-weight: 500;
+}
+
+.prose-doc code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  background: #1a1a1a;
+  border: 1px solid #222;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  color: #e8e8e8;
+}
+
+.prose-doc blockquote {
+  border-left: 2px solid #333;
+  padding-left: 0.75rem;
+  color: #737373;
+  margin: 0.75rem 0;
+  font-style: normal;
+}
+
+/* Chat bubble markdown */
+.chat-prose p {
+  margin: 0 0 0.5rem;
+  font-size: 0.875rem;
+}
+
+.chat-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.chat-prose ul,
+.chat-prose ol {
+  padding-left: 1.25rem;
+  margin: 0.25rem 0 0.5rem;
+  font-size: 0.875rem;
+}
+
+.chat-prose code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  background: #1f1f1f;
+  border: 1px solid #2a2a2a;
+  padding: 0.1rem 0.3rem;
+  border-radius: 2px;
+}
+
+.chat-prose strong {
+  color: #fff;
+  font-weight: 500;
+}
