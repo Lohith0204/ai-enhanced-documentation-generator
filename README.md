@@ -4,7 +4,7 @@ Serverless RAG-Based Document Intelligence System
 
 ## 🌐 Live Deployment
 
-Document Intelligence Dashboard: _Add your Vercel URL here once deployed_
+Document Intelligence Dashboard: https://ai-enhanced-documentation-generator.vercel.app/
 
 ## Overview
 
@@ -54,9 +54,10 @@ The architecture separates document ingestion, semantic retrieval, and LLM reaso
 ```mermaid
 graph TD
     U[User] --> UI[Next.js UI]
-    UI --> UP[/api/upload]
-    UI --> GD[/api/generate-docs]
-    UI --> QA[/api/ask]
+
+    UI --> UP["/api/upload"]
+    UI --> GD["/api/generate-docs"]
+    UI --> QA["/api/ask"]
 
     UP --> EX[Text Extraction]
     EX --> CH[Chunking]
